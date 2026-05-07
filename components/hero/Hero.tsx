@@ -1,8 +1,10 @@
 import Image from 'next/image';
+import cn from '@/utils/cn';
+import { colorFilter } from '@/utils/styles';
 
 export default function Hero() {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center gap-4 md:gap-12 group">
+    <section className="flex flex-col-reverse md:flex-row items-center gap-4 md:gap-8 group">
       <div>
         <h1 className="text-2xl md:text-4xl text-justify">
           Bulut is a full-stack developer from Istanbul, building web and mobile applications with
@@ -17,7 +19,7 @@ export default function Hero() {
           alt="Bulut Yerli"
           priority
           sizes="(max-width: 768px) 100vw, 256px"
-          className="grayscale sepia group-hover:grayscale-0 group-hover:sepia-0 dark:grayscale transition-[filter] duration-300 dark:sepia-0"
+          className={cn(colorFilter)}
           objectFit="cover"
         />
       </div>

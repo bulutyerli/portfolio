@@ -12,7 +12,14 @@ export default function Divider({
   className,
 }: DividerProps) {
   if (direction === 'vertical') {
-    return <div className={cn('w-px h-full bg-black/60 dark:bg-zinc-600', className)} />;
+    return (
+      <div
+        className={cn(
+          'w-full h-px md:w-px md:h-auto md:self-stretch bg-black/60 dark:bg-zinc-600',
+          className
+        )}
+      />
+    );
   }
 
   return (

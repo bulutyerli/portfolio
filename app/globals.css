@@ -8,16 +8,20 @@
 
     --color-background: var(--background);
     --color-foreground: var(--foreground);
+    --color-marker: var(--marker);
 }
 
 :root {
     --background: #e8d5b5;
     --foreground: #1a1a1a;
+    --marker: #a8c5a0;
 }
+
 
 .dark {
     --background: #1a1a1a;
     --foreground: #e8e0d0;
+    --marker: #4a7a52;
 }
 
 body {
