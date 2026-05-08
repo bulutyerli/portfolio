@@ -1,3 +1,12 @@
-## Here i am
+# Portfolio
 
-My portfolio website, built by Next.js and tailwind css
+Personal portfolio website built with Next.js and TypeScript.
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it.
