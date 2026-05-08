@@ -4,7 +4,7 @@ export const PROJECTS: ProjectCardProps[] = [
   {
     title: 'workwise',
     desc: [
-      'A company management platform built around role-based access control. Employees, managers, and HR each operate within strict permission boundaries — from leave approval workflows to salary visibility and financial reporting.',
+      'A company management app built around role-based access control — employees, managers, and HR each see and do different things based on their role, from requesting leave to viewing salaries and financial reports.',
     ],
     image: '/workwise/workwise1.webp',
     githubLink: 'https://github.com/bulutyerli/WorkWise-Frontend',
@@ -21,7 +21,7 @@ export const PROJECTS: ProjectCardProps[] = [
     title: 'nuvola coffee shop',
     desc: [
       'A demo coffee shop built to properly implement a full Stripe payment flow — webhooks, order fulfillment, and payment status handling.',
-      'AWS Cognito handles auth with email' + ' verification,' + ' and the cart persists in local storage before sign in.',
+      'AWS Cognito handles auth with email verification, and the cart persists in local storage before sign in.',
       'Wrote a Medium article on the Stripe + Next.js integration.',
     ],
     image: '/nuvolacoffee/nuvolacoffee1.webp',
@@ -32,7 +32,11 @@ export const PROJECTS: ProjectCardProps[] = [
 
   {
     title: 'denizweber.com',
-    desc: ['Personal brand site for a professional book translator. Sanity CMS for client-managed content, SEO-optimized pages, and a translated works archive with testimonials.'],
+    desc: [
+      'Freelance project for a professional book translator.',
+      'Translated works archive, publisher testimonials, and service listings — with SEO-optimized pages and strong Core Web Vitals scores.',
+      'Built with Sanity CMS so the client can manage her own content without touching code.',
+    ],
     image: '/denizweber/denizweber1.webp',
     livelink: 'https://denizweber.com',
     skills: ['typescript', 'next.js', 'sanity', 'tailwind'],

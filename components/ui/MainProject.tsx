@@ -2,7 +2,7 @@ import Image from 'next/image';
 import cn from '@/utils/cn';
 import { colorFilter } from '@/utils/styles';
 import Badge from '@/components/ui/Badge';
-import { FaApple, FaExternalLinkSquareAlt, FaGooglePlay } from 'react-icons/fa';
+import { FaApple, FaBook, FaExternalLinkSquareAlt, FaGooglePlay } from 'react-icons/fa';
 import Link from 'next/link';
 import Divider from '@/components/ui/Divider';
 import Marker from '@/components/ui/Marker';
@@ -20,7 +20,7 @@ const skills = [
 
 export default function MainProject() {
   return (
-    <article className="flex flex-col lg:flex-row-reverse items-center lg:items-start justify-center lg:justify-between w-full group lg:gap-4 group/highlight">
+    <article className="flex flex-col lg:flex-row-reverse items-center lg:items-start justify-center lg:justify-between w-full group lg:gap-6 group/highlight">
       <div className="aspect-video w-full lg:w-3/5 relative">
         <Image
           alt="watchlabb"
@@ -31,7 +31,7 @@ export default function MainProject() {
         />
       </div>
       <div className="lg:w-2/5 text-justify">
-        <h3 className="text-2xl font-medium tracking-wider my-4 lg:my-0 text-center lg:text-start">
+        <h3 className="text-2xl font-medium tracking-wider my-2 md:my-0 md:mb-4 text-center lg:text-start">
           Watchlabb Web & Mobile
         </h3>
         <p>
@@ -46,7 +46,7 @@ export default function MainProject() {
           </Marker>
           .
         </p>
-        <ul className="list-['—'] ml-4 mt-3 space-y-1 marker:text-zinc-500 dark:marker:text-zinc-500 [&>li]:pl-1">
+        <ul className="list-['—'] ml-4 mt-2 space-y-1 marker:text-zinc-500 dark:marker:text-zinc-500 [&>li]:pl-1">
           <li>Real-time auction system with live bidding</li>
           <li>KYC & phone verification pipeline</li>
           <li>
@@ -56,14 +56,21 @@ export default function MainProject() {
           <li>Role-based access control</li>
           <li>Instagram theme creation and auto-sharing for Store owners</li>
         </ul>
-        <ul className="flex flex-wrap gap-2 mt-3">
+        <ul className="flex flex-wrap gap-2 mt-2 md:mt-4">
           {skills.map((skill) => (
             <li key={skill}>
               <Badge text={skill} />
             </li>
           ))}
         </ul>
-        <div className="flex flex-wrap gap-2 items-center justify-between lg:justify-start mt-3">
+        <div className="flex flex-wrap gap-2 items-center justify-between lg:justify-start mt-2 md:mt-4">
+          <Marker>
+            <Link href="/projects/watchlabb" className="group/link flex items-center gap-1">
+              <FaBook className="group-hover/link:opacity-100 opacity-50 transition-opacity duration-300" />
+              <span>Case Study</span>
+            </Link>
+          </Marker>
+          <Divider width="short" />
           <Marker>
             <Link
               href="https://watchlabb.com"

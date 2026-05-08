@@ -19,8 +19,7 @@ export default function Hero() {
           alt="Bulut Yerli"
           priority
           sizes="(max-width: 768px) 100vw, 256px"
-          className={cn(colorFilter)}
-          objectFit="cover"
+          className={cn(colorFilter, 'object-cover')}
         />
       </div>
     </section>

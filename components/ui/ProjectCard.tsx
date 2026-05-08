@@ -21,45 +21,53 @@ export default function ProjectCard({
   className,
 }: ProjectCardProps) {
   return (
-    <article
-      className={cn('flex flex-col items-center md:items-start w-full group md:gap-4', className)}
-    >
+    <article className={cn('flex flex-col items-center md:items-start w-full group', className)}>
       <div className="aspect-video w-full relative">
         <Image
           alt={`${title} screenshot`}
           src={image}
           fill
-          className={cn(colorFilter)}
+          className={cn(colorFilter, 'object-cover object-top')}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          objectFit="cover"
         />
       </div>
       <div className="text-justify">
-        <h3 className="text-2xl font-medium tracking-wider my-4 md:my-0 text-center md:text-start">
+        <h3 className="text-2xl font-medium tracking-wider my-2 text-center md:text-start">
           {title}
         </h3>
         {desc.map((d, index) => {
           return (
-            <p key={index} className="not-first-of-type:mt-3">
+            <p key={index} className="not-first-of-type:mt-2">
               {d}
             </p>
           );
         })}
         {bulletins && (
-          <ul className="list-['—'] ml-4 mt-3 space-y-1 marker:text-zinc-500 dark:marker:text-zinc-500 [&>li]:pl-1">
+          <ul className="list-['—'] ml-4 mt-2 space-y-1 marker:text-zinc-500 dark:marker:text-zinc-500 [&>li]:pl-1">
             {bulletins.map((bullet) => (
               <li key={bullet}>{bullet}</li>
             ))}
           </ul>
         )}
-        <ul className="flex flex-wrap gap-2 mt-3">
+        <ul className="flex flex-wrap gap-2 mt-2 md:mt-4">
           {skills.map((skill) => (
             <li key={skill}>
               <Badge text={skill} />
             </li>
           ))}
         </ul>
-        <div className="flex flex-wrap gap-2 items-center justify-between md:justify-start mt-3">
+        <div className="flex flex-wrap gap-2 items-center justify-start mt-2 md:mt-4">
+          {casestudy && (
+            <Fragment>
+              <Marker>
+                <Link href={casestudy} className="group/link flex items-center gap-1">
+                  <FaBook className="group-hover/link:opacity-100 opacity-50 transition-opacity duration-300" />
+                  <span>Case Study</span>
+                </Link>
+              </Marker>
+              <Divider width="short" />
+            </Fragment>
+          )}
           {livelink && (
             <Fragment>
               <Marker>
@@ -87,17 +95,6 @@ export default function ProjectCard({
                 >
                   <FaGithub className="group-hover/link:opacity-100 opacity-50 transition-opacity duration-300" />
                   <span>GitHub</span>
-                </Link>
-              </Marker>
-              {casestudy && <Divider width="short" />}
-            </Fragment>
-          )}
-          {casestudy && (
-            <Fragment>
-              <Marker>
-                <Link href={casestudy} className="group/link flex items-center gap-1">
-                  <FaBook className="group-hover/link:opacity-100 opacity-50 transition-opacity duration-300" />
-                  <span>Case Study</span>
                 </Link>
               </Marker>
             </Fragment>
