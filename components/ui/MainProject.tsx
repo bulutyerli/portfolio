@@ -31,7 +31,7 @@ export default function MainProject() {
         />
       </div>
       <div className="lg:w-2/5 text-justify">
-        <h3 className="text-2xl font-medium tracking-wider my-2 md:my-0 md:mb-4 text-center lg:text-start">
+        <h3 className="text-2xl font-medium tracking-wider my-2 md:my-0 md:mb-4 text-start">
           Watchlabb Web & Mobile
         </h3>
         <p>
@@ -47,14 +47,15 @@ export default function MainProject() {
           .
         </p>
         <ul className="list-['—'] ml-4 mt-2 space-y-1 marker:text-zinc-500 dark:marker:text-zinc-500 [&>li]:pl-1">
-          <li>Real-time auction system with live bidding</li>
-          <li>KYC & phone verification pipeline</li>
+          <li>Real-time auctions with live bidding and auto-end handling</li>
+          <li>KYC + SMS verification for users and listings</li>
+          <li>Credit card payments & native in-app purchases for mobile</li>
           <li>
-            Credit card payment & auto invoice integration for Web, Native in-app purchase system
-            for mobile
+            Custom-built billing pipeline with cron jobs, processing queues & automated invoicing
           </li>
-          <li>Role-based access control</li>
-          <li>Instagram theme creation and auto-sharing for Store owners</li>
+          <li>Auto-generated sale certificates & auto Instagram share cards</li>
+          <li>Push, in-app & email notifications with per-user preferences</li>
+          <li>Role-based access control for admins & moderators</li>
         </ul>
         <ul className="flex flex-wrap gap-2 mt-2 md:mt-4">
           {skills.map((skill) => (
@@ -64,13 +65,13 @@ export default function MainProject() {
           ))}
         </ul>
         <div className="flex flex-wrap gap-2 items-center justify-between lg:justify-start mt-2 md:mt-4">
-          <Marker>
+          {/*<Marker>
             <Link href="/projects/watchlabb" className="group/link flex items-center gap-1">
               <FaBook className="group-hover/link:opacity-100 opacity-50 transition-opacity duration-300" />
               <span>Case Study</span>
             </Link>
           </Marker>
-          <Divider width="short" />
+          <Divider width="short" />*/}
           <Marker>
             <Link
               href="https://watchlabb.com"

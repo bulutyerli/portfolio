@@ -4,18 +4,14 @@ export const PROJECTS: ProjectCardProps[] = [
   {
     title: 'workwise',
     desc: [
-      'A company management app built around role-based access control — employees, managers, and HR each see and do different things based on their role, from requesting leave to viewing salaries and financial reports.',
+      'A company management app where HR, managers, and employees each have their own access level and features.',
+      'HR manages staff and salaries, managers approve leave requests, employees can submit requests and view the team.',
+      'Comes with a financial dashboard, org chart, and a documented REST API.',
     ],
+
     image: '/workwise/workwise1.webp',
     githubLink: 'https://github.com/bulutyerli/WorkWise-Frontend',
-    casestudy: '/projects/workwise',
     skills: ['typescript', 'react', 'node.js', 'express', 'postgresql', 'docker', 'jest'],
-    bulletins: [
-      'Hierarchy-based leave approval system',
-      'Role-scoped data access across HR, manager, and employee tiers',
-      'Financial dashboard with income and expense visualizations',
-      'MVC backend deployed on Google Cloud via Docker',
-    ],
   },
   {
     title: 'nuvola coffee shop',
@@ -34,7 +30,7 @@ export const PROJECTS: ProjectCardProps[] = [
     title: 'denizweber.com',
     desc: [
       'Freelance project for a professional book translator.',
-      'Translated works archive, publisher testimonials, and service listings — with SEO-optimized pages and strong Core Web Vitals scores.',
+      'Translated works archive, publisher testimonials, and service listings — with SEO-optimized pages.',
       'Built with Sanity CMS so the client can manage her own content without touching code.',
     ],
     image: '/denizweber/denizweber1.webp',

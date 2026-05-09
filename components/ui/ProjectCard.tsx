@@ -32,9 +32,7 @@ export default function ProjectCard({
         />
       </div>
       <div className="text-justify">
-        <h3 className="text-2xl font-medium tracking-wider my-2 text-center md:text-start">
-          {title}
-        </h3>
+        <h3 className="text-2xl font-medium tracking-wider my-2 text-start">{title}</h3>
         {desc.map((d, index) => {
           return (
             <p key={index} className="not-first-of-type:mt-2">
