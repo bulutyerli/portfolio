@@ -7,13 +7,6 @@ import ProjectCard from '@/components/ui/ProjectCard';
 import { PiArticleMedium } from 'react-icons/pi';
 import ArticleCard from '@/components/ui/ArticleCard';
 import { getArticles } from '@/lib/getArticles';
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Bulut Yerli Portfolio Website',
-  description:
-    'Full Stack Web and Mobile Developer. Typescript, Node.js, Express, React, Next.js and React Native',
-};
 
 export default async function Home() {
   const articles = await getArticles();

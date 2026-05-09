@@ -35,7 +35,7 @@ export default function ArticleCard({
       <span className="text-xs mt-1 text-start">{formatDate(date)}</span>
 
       <div className="w-full text-justify">
-        <h3 className="text-xl font-medium tracking-wider my-2 text-start line-clamp-2">{title}</h3>
+        <h3 className="text-xl font-medium my-2 text-start line-clamp-2">{title}</h3>
         <p className="line-clamp-6">{desc}</p>
       </div>
       <div className="mt-2 md:mt-4">

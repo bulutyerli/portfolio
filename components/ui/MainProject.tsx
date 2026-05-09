@@ -31,7 +31,7 @@ export default function MainProject() {
         />
       </div>
       <div className="lg:w-2/5 text-justify">
-        <h3 className="text-2xl font-medium tracking-wider my-2 md:my-0 md:mb-4 text-start">
+        <h3 className="text-2xl font-medium my-2 md:my-0 md:mb-4 text-start">
           Watchlabb Web & Mobile
         </h3>
         <p>
