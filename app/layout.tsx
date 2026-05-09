@@ -5,6 +5,8 @@ import Header from '@/components/header/Header';
 import { ThemeProvider } from 'next-themes';
 import Footer from '@/components/Footer';
 import { Suspense } from 'react';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const playfair = Playfair_Display({
   variable: '--font-logo',
@@ -41,6 +43,9 @@ export default function RootLayout({
         <ThemeProvider attribute="class">
           <Header />
           {children}
+          <Analytics />
+          <SpeedInsights />
+
           <Suspense fallback={null}>
             <Footer />
           </Suspense>
