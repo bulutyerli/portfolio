@@ -5,23 +5,18 @@ import { FaCode } from 'react-icons/fa6';
 import { PROJECTS } from '@/lib/data/projects';
 import ProjectCard from '@/components/ui/ProjectCard';
 import { PiArticleMedium } from 'react-icons/pi';
-import Parser from 'rss-parser';
-import { getMediumImage } from '@/utils/getMediumImage';
 import ArticleCard from '@/components/ui/ArticleCard';
+import { getArticles } from '@/lib/getArticles';
+import { Metadata } from 'next';
 
-const parser = new Parser();
+export const metadata: Metadata = {
+  title: 'Bulut Yerli Portfolio Website',
+  description:
+    'Full Stack Web and Mobile Developer. Typescript, Node.js, Express, React, Next.js and React Native',
+};
 
 export default async function Home() {
-  const feed = await parser.parseURL('https://medium.com/feed/@bulutyerli');
-
-  const articles = feed.items.map((item) => ({
-    title: item.title ?? '',
-    content: item['content:encodedSnippet'] ?? '',
-    link: item.link ?? '',
-    date: item.pubDate ?? '',
-    image: getMediumImage(item['content:encoded'] ?? ''),
-  }));
-
+  const articles = await getArticles();
   return (
     <main className="flex flex-col gap-4 md:gap-6 px-4 xl:px-0">
       <Hero />

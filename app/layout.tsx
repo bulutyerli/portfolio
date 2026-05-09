@@ -3,8 +3,8 @@ import { Playfair_Display, Bitter, DM_Mono } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header/Header';
 import { ThemeProvider } from 'next-themes';
-import Divider from '@/components/ui/Divider';
 import Footer from '@/components/Footer';
+import { Suspense } from 'react';
 
 const playfair = Playfair_Display({
   variable: '--font-logo',
@@ -43,7 +43,9 @@ export default function RootLayout({
         <ThemeProvider attribute="class">
           <Header />
           {children}
-          <Footer />
+          <Suspense fallback={null}>
+            <Footer />
+          </Suspense>
         </ThemeProvider>
       </body>
     </html>

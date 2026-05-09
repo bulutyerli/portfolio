@@ -1,3 +1,5 @@
+'use client';
+
 import Divider from '@/components/ui/Divider';
 
 export default function Footer() {
