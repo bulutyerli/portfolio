@@ -22,6 +22,7 @@ export default async function Home() {
           <FaCode size="20" className="text-foreground" />
           <h2 className="uppercase tracking-wide text-sm">projects</h2>
         </div>
+
         <MainProject />
         <div className="my-4 md:my-6">
           <Divider width="full" />
