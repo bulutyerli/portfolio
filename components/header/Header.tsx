@@ -6,7 +6,7 @@ import { Suspense } from 'react';
 
 export default function Header() {
   return (
-    <header className="space-y-4 my-4 md:my-6">
+    <header className="space-y-4 md:space-y-6 my-4 md:my-6">
       <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-2 md:gap-0">
         <div className="flex items-center gap-1">
           <Divider width="short" className="flex-1 md:flex-none" />

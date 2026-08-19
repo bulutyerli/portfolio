@@ -65,13 +65,13 @@ export default function MainProject() {
           ))}
         </ul>
         <div className="flex flex-wrap gap-2 items-center justify-between lg:justify-start mt-2 md:mt-4">
-          {/*<Marker>
+          <Marker>
             <Link href="/projects/watchlabb" className="group/link flex items-center gap-1">
               <FaBook className="group-hover/link:opacity-100 opacity-50 transition-opacity duration-300" />
               <span>Case Study</span>
             </Link>
           </Marker>
-          <Divider width="short" />*/}
+          <Divider width="short" />
           <Marker>
             <Link
               href="https://watchlabb.com"
