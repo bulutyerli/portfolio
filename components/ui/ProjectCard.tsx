@@ -63,7 +63,6 @@ export default function ProjectCard({
                   <span>Case Study</span>
                 </Link>
               </Marker>
-              <Divider width="short" />
             </Fragment>
           )}
           {livelink && (

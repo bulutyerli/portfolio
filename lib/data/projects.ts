@@ -2,6 +2,28 @@ import { ProjectCardProps } from '@/lib/types';
 
 export const PROJECTS: ProjectCardProps[] = [
   {
+    title: 'siryona',
+    desc: [
+      'A mobile application for personalized astrology and birth chart analysis.',
+      'Built with Swiss Ephemeris for astronomical calculations and OpenAI for personalized interpretations.',
+      'Includes custom authentication, subscriptions, background jobs, and a full backend API.',
+    ],
+
+    image: '/siryona/siryona1.webp',
+    skills: [
+      'typescript',
+      'react native',
+      'expo',
+      'nestjs',
+      'postgresql',
+      'prisma',
+      'redis',
+      'bullmq',
+      'openai',
+    ],
+    casestudy: '/projects/siryona',
+  },
+  {
     title: 'workwise',
     desc: [
       'A company management app where HR, managers, and employees each have their own access level and features.',

@@ -83,7 +83,7 @@ export default function MainProject() {
               <span>Website</span>
             </Link>
           </Marker>
-          <Divider width="short" />
+          {/* <Divider width="short" />
           <Marker>
             <Link
               href="https://apps.apple.com/tr/app/watchlabb/id6760569475"
@@ -94,7 +94,7 @@ export default function MainProject() {
               <FaApple className="group-hover/link:opacity-100 opacity-50 transition-opacity duration-300" />
               <span>App Store</span>
             </Link>
-          </Marker>
+          </Marker>*/}
           <Divider width="short" />
           <Marker>
             <Link
